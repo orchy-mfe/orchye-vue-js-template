@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
-import svgLoader from "vite-svg-loader";
+import svgLoader from 'vite-svg-loader'
 import {visualizer} from 'rollup-plugin-visualizer'
 import qiankun from 'vite-plugin-qiankun'
 
@@ -11,8 +11,8 @@ export default defineConfig(({mode}) => ({
   plugins: [
     vue(),
     svgLoader(),
-    visualizer(),
     qiankun('orchy-vue-js-template', {useDevMode: true}),
+    visualizer(),
   ],
   base: mode === 'development' ? `http://localhost:${port}/` : '/orchy-vue-js-template/',
   server: {port},
