@@ -1,5 +1,28 @@
-import {createApp} from 'vue'
+import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+let root
+
+const rootSelector = '#app'
+
+const render = ({container} = {}) => {
+    root = createApp(App)
+    root.mount(container ? container.querySelector(rootSelector) : rootSelector)
+}
+
+renderWithQiankun({
+    mount(props) {
+        render(props)
+    },
+    bootstrap() { },
+    unmount() {
+        root.unmount();
+        root._container.innerHTML = '';
+        root = null;
+    },
+})
+
+if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
+    render({})
+}
