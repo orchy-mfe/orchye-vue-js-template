@@ -1,4 +1,5 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
+import {renderWithQiankun, qiankunWindow} from 'vite-plugin-qiankun/dist/helper'
 import './style.css'
 import App from './App.vue'
 
@@ -17,9 +18,9 @@ renderWithQiankun({
     },
     bootstrap() { },
     unmount() {
-        root.unmount();
-        root._container.innerHTML = '';
-        root = null;
+        root.unmount()
+        root._container.innerHTML = ''
+        root = null
     },
 })
 
