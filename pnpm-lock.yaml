@@ -4,6 +4,7 @@ specifiers:
   '@testing-library/vue': ^6.6.1
   '@vitejs/plugin-vue': ^3.0.3
   '@vue/cli-plugin-eslint': ^5.0.8
+  '@vue/eslint-config-prettier': ^7.0.0
   eslint: ^8.23.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.2.1
@@ -23,6 +24,7 @@ devDependencies:
   '@testing-library/vue': 6.6.1_lkq4ousnc7vzls4uafs2kgxwfm
   '@vitejs/plugin-vue': 3.0.3_vite@3.0.9+vue@3.2.38
   '@vue/cli-plugin-eslint': 5.0.8_depu2muq63mo5klvxejlz4p7ce
+  '@vue/eslint-config-prettier': 7.0.0_bxpuzolsxufkw2ipnoyzzxnyrm
   eslint: 8.23.0
   eslint-config-prettier: 8.5.0_eslint@8.23.0
   eslint-plugin-prettier: 4.2.1_tgumt6uwl2md3n6uqnggd6wvce
@@ -954,6 +956,18 @@ packages:
       - velocityjs
       - walrus
       - whiskers
+    dev: true
+
+  /@vue/eslint-config-prettier/7.0.0_bxpuzolsxufkw2ipnoyzzxnyrm:
+    resolution: {integrity: sha512-/CTc6ML3Wta1tCe1gUeO0EYnVXfo3nJXsIhZ8WJr3sov+cGASr6yuiibJTL6lmIBm7GobopToOuB3B6AWyV0Iw==}
+    peerDependencies:
+      eslint: '>= 7.28.0'
+      prettier: '>= 2.0.0'
+    dependencies:
+      eslint: 8.23.0
+      eslint-config-prettier: 8.5.0_eslint@8.23.0
+      eslint-plugin-prettier: 4.2.1_tgumt6uwl2md3n6uqnggd6wvce
+      prettier: 2.7.1
     dev: true
 
   /@vue/reactivity-transform/3.2.38:
