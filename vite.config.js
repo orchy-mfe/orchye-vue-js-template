@@ -1,16 +1,16 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import svgr from 'vite-plugin-svgr'
+import svgLoader from "vite-svg-loader";
 import {visualizer} from 'rollup-plugin-visualizer'
 import qiankun from 'vite-plugin-qiankun'
 
 const port = process.env.PORT || 8080
 
-export default defineConfig({
+export default defineConfig(({mode}) => ({
   plugins: [
     vue(),
-    svgr(),
+    svgLoader(),
     visualizer(),
     qiankun('orchy-vue-js-template', {useDevMode: true}),
   ],
@@ -20,4 +20,4 @@ export default defineConfig({
     environment: 'happy-dom',
     mockReset: true
   },
-})
+}))
