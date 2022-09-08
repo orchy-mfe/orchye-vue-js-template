@@ -13,7 +13,7 @@ specifiers:
   rollup-plugin-visualizer: ^5.8.1
   vite: ^3.0.9
   vite-plugin-qiankun: ^1.0.15
-  vite-svg-loader: ^3.5.1
+  vite-svg-loader: ^3.6.0
   vitest: ^0.23.0
   vue: ^3.2.39
 
@@ -33,7 +33,7 @@ devDependencies:
   rollup-plugin-visualizer: 5.8.1
   vite: 3.0.9
   vite-plugin-qiankun: 1.0.15_dl5nou5ldq7zlftzutsw4wm3t4
-  vite-svg-loader: 3.5.1
+  vite-svg-loader: 3.6.0
   vitest: 0.23.0_happy-dom@6.0.4
 
 packages:
@@ -5737,8 +5737,8 @@ packages:
       vite: 3.0.9
     dev: true
 
-  /vite-svg-loader/3.5.1:
-    resolution: {integrity: sha512-zGAq7qQEh21bWDIuJUwl2t9Vmr4iH7PLqKM1yqS30BjjkLilSYuOokn6wa+Rg/M8m8k1XnQowuj3zRrZq9rYMg==}
+  /vite-svg-loader/3.6.0:
+    resolution: {integrity: sha512-bZJffcgCREW57kNkgMhuNqeDznWXyQwJ3wKrRhHLMMzwDnP5jr3vXW3cqsmquRR7VTP5mLdKj1/zzPPooGUuPw==}
     dependencies:
       '@vue/compiler-sfc': 3.2.38
       svgo: 2.8.0
