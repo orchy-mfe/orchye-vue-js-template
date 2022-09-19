@@ -3,16 +3,24 @@ import {
   renderWithQiankun,
   qiankunWindow,
 } from "vite-plugin-qiankun/dist/helper";
+import { createRouter, createWebHistory } from "vue-router";
 import "./style.css";
 import App from "./App.vue";
 
-let root;
+let app;
 
 const rootSelector = "#app";
 
-const render = ({ container } = {}) => {
-  root = createApp(App);
-  root.mount(container ? container.querySelector(rootSelector) : rootSelector);
+const createAppRouter = (props) =>
+  createRouter({
+    history: createWebHistory(props.baseUrl),
+    routes: [],
+  });
+
+const render = (props = {}) => {
+  app = createApp(App);
+  app.use(createAppRouter(props));
+  app.mount(props.container?.querySelector(rootSelector) || rootSelector);
 };
 
 renderWithQiankun({
@@ -21,9 +29,9 @@ renderWithQiankun({
   },
   bootstrap() {},
   unmount() {
-    root.unmount();
-    root._container.innerHTML = "";
-    root = null;
+    app.unmount();
+    app._container.innerHTML = "";
+    app = null;
   },
 });
 
