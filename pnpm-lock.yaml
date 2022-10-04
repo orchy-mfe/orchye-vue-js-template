@@ -8,7 +8,7 @@ specifiers:
   eslint: ^8.24.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-vue: ^9.5.1
+  eslint-plugin-vue: ^9.6.0
   happy-dom: ^6.0.4
   rollup-plugin-visualizer: ^5.8.2
   vite: ^3.1.4
@@ -30,7 +30,7 @@ devDependencies:
   eslint: 8.24.0
   eslint-config-prettier: 8.5.0_eslint@8.24.0
   eslint-plugin-prettier: 4.2.1_cfn5x6ujhhgzv3423d6k7r2zzm
-  eslint-plugin-vue: 9.5.1_eslint@8.24.0
+  eslint-plugin-vue: 9.6.0_eslint@8.24.0
   happy-dom: 6.0.4
   rollup-plugin-visualizer: 5.8.2
   vite: 3.1.4
@@ -2736,8 +2736,8 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-vue/9.5.1_eslint@8.24.0:
-    resolution: {integrity: sha512-Y0sL2RY7Xc9S8kNih9lbwHIDmewUg9bfas6WSzsOWRgDXhIHKxRBZYNAnVcXBFfE+bMWHUA5GLChl7TcTYUI8w==}
+  /eslint-plugin-vue/9.6.0_eslint@8.24.0:
+    resolution: {integrity: sha512-zzySkJgVbFCylnG2+9MDF7N+2Rjze2y0bF8GyUNpFOnT8mCMfqqtLDJkHBuYu9N/psW1A6DVbQhPkP92E+qakA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
