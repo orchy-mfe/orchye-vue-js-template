@@ -11,6 +11,7 @@ specifiers:
   eslint-plugin-vue: ^9.6.0
   happy-dom: ^7.4.0
   rollup-plugin-visualizer: ^5.8.2
+  rxjs: ^7.5.7
   vite: ^3.1.6
   vite-plugin-qiankun: ^1.0.15
   vite-svg-loader: ^3.6.0
@@ -19,6 +20,7 @@ specifiers:
   vue-router: ^4.1.5
 
 dependencies:
+  rxjs: 7.5.7
   vue: 3.2.40
   vue-router: 4.1.5_vue@3.2.40
 
@@ -5081,6 +5083,12 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
+  /rxjs/7.5.7:
+    resolution: {integrity: sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==}
+    dependencies:
+      tslib: 2.4.0
+    dev: false
+
   /safe-buffer/5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
     dev: true
@@ -5631,7 +5639,6 @@ packages:
 
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
-    dev: true
 
   /type-check/0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
