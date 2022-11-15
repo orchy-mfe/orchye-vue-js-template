@@ -11,6 +11,7 @@
     "lint": "eslint ./src --ext .js,.vue"
   },
   "dependencies": {
+    "@orchy-mfe/spa-adapter": "^0.1.0",
     "rxjs": "^7.5.7",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
@@ -27,7 +28,6 @@
     "happy-dom": "^7.7.0",
     "rollup-plugin-visualizer": "^5.8.3",
     "vite": "^3.2.3",
-    "vite-plugin-qiankun": "^1.0.15",
     "vite-svg-loader": "^3.6.0",
     "vitest": "^0.25.2"
   }

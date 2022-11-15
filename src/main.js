@@ -1,40 +1,32 @@
 import { createApp } from "vue";
-import {
-  renderWithQiankun,
-  qiankunWindow,
-} from "vite-plugin-qiankun/dist/helper";
 import { createRouter, createWebHistory } from "vue-router";
 import "./style.css";
 import App from "./App.vue";
 
-let app;
+import OrchyBaseMfe from '@orchy-mfe/spa-adapter'
 
-const rootSelector = "#app";
+export class VueMfeTypeScript extends OrchyBaseMfe {
+  app
+  async mount(microFrontendProperties) {
+    this.app = createApp(App);
+    this.app.use(this.createAppRouter(microFrontendProperties));
+    this.app.mount(this.getContainer());
+  }
 
-const createAppRouter = (props) =>
-  createRouter({
-    history: createWebHistory(props.baseUrl),
-    routes: [],
-  });
+  createAppRouter(microFrontendProperties) {
+    return createRouter({
+      history: createWebHistory(microFrontendProperties?.basePath),
+      routes: [],
+    });
+  }
 
-const render = (props = {}) => {
-  app = createApp(App);
-  app.use(createAppRouter(props));
-  app.mount(props.container?.querySelector(rootSelector) || rootSelector);
-};
-
-renderWithQiankun({
-  mount(props) {
-    render(props);
-  },
-  bootstrap() {},
-  unmount() {
-    app.unmount();
-    app._container.innerHTML = "";
-    app = null;
-  },
-});
-
-if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
-  render({});
+  async unmount() {
+    if(this.app) {
+      this.app.unmount();
+      this.app._container.innerHTML = "";
+    }
+    this.app = null;
+  }
 }
+
+customElements.define('vue-mfe', VueMfeTypeScript)

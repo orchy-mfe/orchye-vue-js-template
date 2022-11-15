@@ -3,7 +3,6 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import svgLoader from "vite-svg-loader";
 import { visualizer } from "rollup-plugin-visualizer";
-import qiankun from "vite-plugin-qiankun";
 
 const port = process.env.PORT || 8080;
 
@@ -11,7 +10,6 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     vue(),
     svgLoader(),
-    qiankun("orchy-vue-js-template", { useDevMode: true }),
     visualizer(),
   ],
   base:
@@ -19,6 +17,13 @@ export default defineConfig(({ mode }) => ({
       ? `http://localhost:${port}/`
       : "/orchy-vue-js-template/",
   server: { port, cors: true },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: '[name].js'
+      }
+    }
+  },
   test: {
     environment: "happy-dom",
     mockReset: true,
