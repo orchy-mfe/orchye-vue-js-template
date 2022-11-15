@@ -3,10 +3,9 @@ import { createRouter, createWebHistory } from "vue-router";
 import "./style.css";
 import App from "./App.vue";
 
-import OrchyBaseMfe from '@orchy-mfe/spa-adapter'
+import OrchyMicroFrontend from "@orchy-mfe/spa-adapter";
 
-export class VueMfeTypeScript extends OrchyBaseMfe {
-  app
+export class VueMfe extends OrchyMicroFrontend {
   async mount(microFrontendProperties) {
     this.app = createApp(App);
     this.app.use(this.createAppRouter(microFrontendProperties));
@@ -21,7 +20,7 @@ export class VueMfeTypeScript extends OrchyBaseMfe {
   }
 
   async unmount() {
-    if(this.app) {
+    if (this.app) {
       this.app.unmount();
       this.app._container.innerHTML = "";
     }
@@ -29,4 +28,4 @@ export class VueMfeTypeScript extends OrchyBaseMfe {
   }
 }
 
-customElements.define('vue-mfe', VueMfeTypeScript)
+customElements.define("vue-mfe", VueMfe);
