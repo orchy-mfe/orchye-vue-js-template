@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import svgLoader from "vite-svg-loader";
 import { visualizer } from "rollup-plugin-visualizer";
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 const port = process.env.PORT || 8080;
 
@@ -11,6 +12,7 @@ export default defineConfig(({ mode }) => ({
     vue(),
     svgLoader(),
     visualizer(),
+    cssInjectedByJsPlugin()
   ],
   base:
     mode === "development"
