@@ -30,6 +30,6 @@
     "vite": "^4.0.1",
     "vite-plugin-css-injected-by-js": "^2.1.1",
     "vite-svg-loader": "^3.6.0",
-    "vitest": "^0.25.7"
+    "vitest": "^0.25.8"
   }
 }
