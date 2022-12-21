@@ -12,7 +12,7 @@ specifiers:
   happy-dom: ^8.1.1
   rollup-plugin-visualizer: ^5.8.3
   rxjs: ^7.8.0
-  vite: ^4.0.2
+  vite: ^4.0.3
   vite-plugin-css-injected-by-js: ^2.2.0
   vite-svg-loader: ^3.6.0
   vitest: ^0.26.2
@@ -27,7 +27,7 @@ dependencies:
 
 devDependencies:
   '@testing-library/vue': 6.6.1_tfvhctuaqmmqnirfl65c47tqwu
-  '@vitejs/plugin-vue': 4.0.0_vite@4.0.2+vue@3.2.45
+  '@vitejs/plugin-vue': 4.0.0_vite@4.0.3+vue@3.2.45
   '@vue/eslint-config-prettier': 7.0.0_kuvvoglztceao54jgbqqzvnnqm
   eslint: 8.30.0
   eslint-config-prettier: 8.5.0_eslint@8.30.0
@@ -35,8 +35,8 @@ devDependencies:
   eslint-plugin-vue: 9.8.0_eslint@8.30.0
   happy-dom: 8.1.1
   rollup-plugin-visualizer: 5.8.3
-  vite: 4.0.2
-  vite-plugin-css-injected-by-js: 2.2.0_vite@4.0.2
+  vite: 4.0.3
+  vite-plugin-css-injected-by-js: 2.2.0_vite@4.0.3
   vite-svg-loader: 3.6.0
   vitest: 0.26.2_happy-dom@8.1.1
 
@@ -409,14 +409,14 @@ packages:
     resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==}
     dev: false
 
-  /@vitejs/plugin-vue/4.0.0_vite@4.0.2+vue@3.2.45:
+  /@vitejs/plugin-vue/4.0.0_vite@4.0.3+vue@3.2.45:
     resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.0.2
+      vite: 4.0.3
       vue: 3.2.45
     dev: true
 
@@ -1829,7 +1829,7 @@ packages:
       pathe: 0.2.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.0.2_@types+node@18.7.14
+      vite: 4.0.3_@types+node@18.7.14
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -1840,12 +1840,12 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-css-injected-by-js/2.2.0_vite@4.0.2:
+  /vite-plugin-css-injected-by-js/2.2.0_vite@4.0.3:
     resolution: {integrity: sha512-SRGuyY1WUHj7cPzv7AIE0bG5Cb+vioxuq3CkFc1j0b8z5Cy3rXLG8SwxjriylFcZAY7tH2jU4i1bsCJRE/ou6g==}
     peerDependencies:
       vite: '>2.0.0-0'
     dependencies:
-      vite: 4.0.2
+      vite: 4.0.3
     dev: true
 
   /vite-svg-loader/3.6.0:
@@ -1855,8 +1855,8 @@ packages:
       svgo: 2.8.0
     dev: true
 
-  /vite/4.0.2:
-    resolution: {integrity: sha512-QJaY3R+tFlTagH0exVqbgkkw45B+/bXVBzF2ZD1KB5Z8RiAoiKo60vSUf6/r4c2Vh9jfGBKM4oBI9b4/1ZJYng==}
+  /vite/4.0.3:
+    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -1888,8 +1888,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.0.2_@types+node@18.7.14:
-    resolution: {integrity: sha512-QJaY3R+tFlTagH0exVqbgkkw45B+/bXVBzF2ZD1KB5Z8RiAoiKo60vSUf6/r4c2Vh9jfGBKM4oBI9b4/1ZJYng==}
+  /vite/4.0.3_@types+node@18.7.14:
+    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -1958,7 +1958,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
-      vite: 4.0.2_@types+node@18.7.14
+      vite: 4.0.3_@types+node@18.7.14
       vite-node: 0.26.2_@types+node@18.7.14
     transitivePeerDependencies:
       - less
