@@ -28,7 +28,7 @@
     "rollup-plugin-visualizer": "^5.9.2",
     "vite": "^5.0.0",
     "vite-plugin-css-injected-by-js": "^3.3.0",
-    "vite-svg-loader": "^4.0.0",
+    "vite-svg-loader": "^5.0.1",
     "vitest": "^0.34.6"
   }
 }
